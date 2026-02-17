@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Krista Charters</title>
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
 
   <body>
@@ -19,6 +19,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="resume.html">Resume</a></li>
+          <li><a href="#projects">Projects</a></li>
         </ul>
       </nav>
     </header>
@@ -26,12 +27,46 @@
     <main class="hero">
       <div class="hero-content">
         <p class="tagline">
-          Hello, my name is Krista Charters. I am a Computer Science student with
-          a concentration in Software Engineering at the University of Montana.
-          I am expected to graduate in May 2028.
+          Hello, my name is Krista Charters. I am a Computer Science student
+          with a concentration in Software Engineering at the University of
+          Montana. I am expected to graduate in May 2028.
         </p>
       </div>
     </main>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Personal Portfolio Website</h3>
+          <p>
+            A responsive website built using HTML and CSS to showcase my
+            experience, skills, and projects.
+          </p>
+          <a href="#">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Java Data Structures Project</h3>
+          <p>
+            Implemented linked lists, stacks, and queues in Java while analyzing
+            algorithm efficiency and runtime performance.
+          </p>
+          <a href="#">View GitHub Repo</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Python Task Manager</h3>
+          <p>
+            A command-line task management application that allows users to
+            create, update, and manage tasks efficiently.
+          </p>
+          <a href="#">View Case Study</a>
+        </div>
+      </div>
+    </section>
 
     <section id="contact">
       <h2>Contact Me</h2>
@@ -39,22 +74,12 @@
       <form>
         <div class="form-group">
           <label for="name">Your Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            required
-          />
+          <input type="text" id="name" name="name" required />
         </div>
 
         <div class="form-group">
           <label for="email">Your Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-          />
+          <input type="email" id="email" name="email" required />
         </div>
 
         <div class="form-group">
