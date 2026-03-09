@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Krista Charters</title>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
 
-  <body>
+  <body class="bg-gray-50">
+
     <header id="page-header">
       <img
-        src="./images/um crest.png"
+        src="./images/um-crest.png"
         alt="University of Montana crest"
         class="logo"
       />
@@ -34,68 +39,139 @@
       </div>
     </main>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects">
-      <h2>Projects</h2>
+    
 
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>Personal Portfolio Website</h3>
-          <p>
-            A responsive website built using HTML and CSS to showcase my
-            experience, skills, and projects.
-          </p>
-          <a href="#">View Project</a>
-        </div>
 
-        <div class="project-card">
-          <h3>Java Data Structures Project</h3>
-          <p>
-            Implemented linked lists, stacks, and queues in Java while analyzing
-            algorithm efficiency and runtime performance.
-          </p>
-          <a href="#">View GitHub Repo</a>
-        </div>
 
-        <div class="project-card">
-          <h3>Python Task Manager</h3>
-          <p>
-            A command-line task management application that allows users to
-            create, update, and manage tasks efficiently.
-          </p>
-          <a href="#">View Case Study</a>
-        </div>
-      </div>
+    
+    <section class="py-16 px-6 max-w-7xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+        Student Testimonials
+      </h2>
+
+      <ul class="grid gap-8 list-none md:grid-cols-2 lg:grid-cols-3">
+
+        
+        <li>
+          <figure class="relative bg-white p-8 rounded-xl shadow-md">
+
+           
+            <svg viewBox="0 0 32 32"
+                 aria-hidden="true"
+                 focusable="false"
+                 class="absolute top-4 left-4 w-8 h-8 text-gray-200 fill-current">
+              <path d="M10 8v8H6v6h6V8h-2zm12 0v8h-4v6h6V8h-2z"></path>
+            </svg>
+
+            <blockquote class="relative">
+              <p class="text-gray-700 leading-relaxed">
+                This course completely changed the way I understand how
+                websites work. Building pages with HTML and Tailwind made
+                everything click for me.
+              </p>
+            </blockquote>
+
+            <figcaption class="flex items-center mt-6 gap-4">
+              <img
+                src="./images/student-headshot3.png"
+                alt=""
+                class="w-12 h-12 rounded-full object-cover"
+              />
+
+              <div>
+                <p class="font-semibold text-gray-900">Emily Rogers</p>
+                <p class="text-gray-500 text-sm">
+                  Freshman, Computer Science
+                </p>
+              </div>
+            </figcaption>
+
+          </figure>
+        </li>
+
+
+        
+        <li>
+          <figure class="relative bg-white p-8 rounded-xl shadow-md">
+
+            <svg viewBox="0 0 32 32"
+                 aria-hidden="true"
+                 focusable="false"
+                 class="absolute top-4 left-4 w-8 h-8 text-gray-200 fill-current">
+              <path d="M10 8v8H6v6h6V8h-2zm12 0v8h-4v6h6V8h-2z"></path>
+            </svg>
+
+            <blockquote>
+              <p class="text-gray-700 leading-relaxed">
+                I started the semester with zero web development experience.
+                Now I feel confident creating responsive layouts and
+                structuring sites using semantic HTML.
+              </p>
+            </blockquote>
+
+            <figcaption class="flex items-center mt-6 gap-4">
+              <img
+                src="./images/student-headshot2.png"
+                alt=""
+                class="w-12 h-12 rounded-full object-cover"
+              />
+
+              <div>
+                <p class="font-semibold text-gray-900">Marcus Lee</p>
+                <p class="text-gray-500 text-sm">
+                  Freshman, Software Engineering
+                </p>
+              </div>
+            </figcaption>
+
+          </figure>
+        </li>
+
+
+        
+        <li>
+          <figure class="relative bg-white p-8 rounded-xl shadow-md">
+
+            <svg viewBox="0 0 32 32"
+                 aria-hidden="true"
+                 focusable="false"
+                 class="absolute top-4 left-4 w-8 h-8 text-gray-200 fill-current">
+              <path d="M10 8v8H6v6h6V8h-2zm12 0v8h-4v6h6V8h-2z"></path>
+            </svg>
+
+            <blockquote>
+              <p class="text-gray-700 leading-relaxed">
+                Learning about design, accessibility, and responsive layouts
+                was my favorite part of this class. It made coding feel
+                creative and practical at the same time.
+              </p>
+            </blockquote>
+
+            <figcaption class="flex items-center mt-6 gap-4">
+              <img
+                src="./images/student-headshot1.png"
+                alt=""
+                class="w-12 h-12 rounded-full object-cover"
+              />
+
+              <div>
+                <p class="font-semibold text-gray-900">Sofia Martinez</p>
+                <p class="text-gray-500 text-sm">
+                  Junior, Media Arts
+                </p>
+              </div>
+            </figcaption>
+
+          </figure>
+        </li>
+
+      </ul>
     </section>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
 
-      <form>
-        <div class="form-group">
-          <label for="name">Your Name</label>
-          <input type="text" id="name" name="name" required />
-        </div>
+    
 
-        <div class="form-group">
-          <label for="email">Your Email</label>
-          <input type="email" id="email" name="email" required />
-        </div>
 
-        <div class="form-group">
-          <label for="message">Your Message</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            style="resize: none;"
-            required
-          ></textarea>
-        </div>
-
-        <button type="submit">Get in Touch</button>
-      </form>
-    </section>
   </body>
 </html>
 
