@@ -148,3 +148,40 @@ p, li {
   margin-bottom: 1rem;
 }
 
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  z-index: 2000;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 10px;
+  left: 10px;
+}
+
+
+
+nav a[aria-current="page"] {
+  font-weight: bold;
+  text-decoration: underline;
+  border-bottom: 2px solid white;
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    animation-delay: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
